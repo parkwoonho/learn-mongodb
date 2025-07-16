@@ -33,7 +33,7 @@
 // `
 
 //const test = [1,2,3,4,5];
-const test =["cat1","dog1","tiger1", "cow1"];
+//const test =["cat1","dog1","tiger1", "cow1"];
 
 // let test2 = test.map((value,index,array)=>{
 //     if(index == 2) {
@@ -85,6 +85,43 @@ const test =["cat1","dog1","tiger1", "cow1"];
 // }
 
 
-    
+//기본값
+const double = (num=5)=> {
+    return num*2;
+}
+console.log(double());
 
-console.log(doubles(2));
+
+const score = 80
+const result = score >= 60 ? "합격" : "탈락"
+
+console.log( "🎁  ~", result)
+
+
+//스프레드 syntax
+const animals = ["cat","dog","tiger"];
+const copyArr = [...animals, "value"]
+console.log(animals);
+console.log(copyArr);
+
+
+const todoItem = {
+    id:1,
+    content : "react 공부하기"
+}
+
+const newItme = {
+    ...todoItem,
+    date: new Date(),
+    isComplete : false,
+    content : "mongodb 공부하기"  //존재하는 키값을 수정한다.
+}
+
+console.log(todoItem);
+console.log(newItme);
+
+if(1 === '1'){
+    console.log("dd")
+}
+
+console.log(!![])
